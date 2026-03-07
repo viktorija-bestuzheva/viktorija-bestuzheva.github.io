@@ -1,0 +1,134 @@
+body {
+    margin: 0;/* Poistetaan oletusmarginaali, jotta tausta peittää koko ruudun ilman rajoja. */
+    /* Käytetään Inter-fonttia koko sivulla, joka on moderni ja helposti luettava sans-serif-fontti */
+    font-family: 'Inter', sans-serif;
+    
+    /* Varmistetaan, että tausta peittää koko ruudun korkeuden */
+    min-height: 100vh;
+    
+    /* Käytetään lineaarista liukuväriä, joka luo syvyyttä ja visuaalista kiinnostavuutta. Värit on valittu siten, että ne sopivat hyvin yhteen ja luovat ammattimaisen ilmeen. */
+    background: linear-gradient(
+        180deg,
+        #2d1b69 0%,
+        #6b2d9e 50%,
+        #8b3daf 100%
+    );
+    background-attachment: fixed; /* Tausta pysyy paikallaan rullatessa */
+    color: white; /* Tekstin oletusväri valkoiseksi taustalle */
+}
+
+/* Poistettu background-color, jotta liukuväri näkyy läpi */
+header {
+    text-align: center;
+    padding: 30px;
+}
+/* Header on keskitetty ja käyttää samaa Alkalami-fonttia kuin footerin logo, mutta hieman pienemmin. */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+/*Käytetty Alkalami-fonttia, joka on tyylikäs serif-fontti*/
+.logo {
+    font-family: 'Alkalami', serif; 
+    font-size: 24px;
+    margin: 0;
+}
+/* Pidetään headerin pääotsikko isona ja selkeänä, mutta ei liian suurena, jotta se ei hallitse liikaa visuaalisesti. */
+h1 {
+    
+    font-size: 40px;
+    margin: 10px 0 0 0;
+    color: #ffffff; 
+}
+/* Main-osio, jossa yhteystiedot */
+.main {
+    padding: 20px;
+}
+
+/* CTA-osio, joka on keskitetty ja käyttää samaa Alkalami-fonttia kuin headerin logo, mutta hieman pienemmin. */
+.CTA {display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    flex-direction: row-reverse;
+    margin: 8px 0;
+}
+
+/* Yhteystietokortit on muotoiltu siten, että ne erottuvat taustasta, mutta eivät ole liian raskaita. Käytetty hieman läpikuultavaa taustaa ja pehmeitä reunoja. */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px; /* Rajattu leveys, näyttää siistimmältä */
+    margin: 0 auto;
+}
+/* Jokainen yhteystietokortti on muotoiltu siten, että se erottuu taustasta, mutta ei ole liian raskas. Käytetty hieman läpikuultavaa taustaa ja pehmeitä reunoja. */
+.contact-card {
+    background-color: rgba(50, 0, 117, 0.8);
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Yhteystietokorttien teksti on muotoiltu siten, että se on selkeää ja helposti luettavaa, mutta ei liian suurta. */
+.contact-card p {
+    font-size: 18px; 
+    margin: 8px 0;
+}
+/* Roolien otsikot ovat kultaisia korostuksia PM/Director-rooleille, jotta ne erottuvat erityisesti. */
+.contact-card h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #FFD700; /* PM/Director otsikot kultaisella korostuksella */
+} 
+/* Kontaktinappi on muotoiltu siten, että se erottuu selkeästi ja houkuttelee klikkaamaan, mutta ei ole liian räikeä. */
+button {
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #da733e;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+/* Kontaktinappi saa hieman tummemman sävyn hover-tilassa, mikä antaa käyttäjälle visuaalista palautetta ja tekee napista interaktiivisemman. */
+button:hover {
+    background-color: #f08a55;
+}
+
+
+/* Footer, joka on keskitetty ja käyttää samaa Alkalami-fonttia kuin headerin logo, mutta hieman pienemmin */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    flex-direction: row-reverse;
+    padding: 60px;}
+.logo-icon {
+  font-size: 24px;
+  vertical-align: super;
+}
+/* Footerin logo on jaettu pääotsikkoon ja alaotsikkoon, jotka on asetettu päällekkäin. */
+.logo-text{
+  display:flex;
+  flex-direction:column;
+}
+/* Footerin pääotsikko on isompi ja käyttää Alkalami-fonttia, joka on tyylikäs serif-fontti. */
+.logo-main {
+    font-family: 'Alkalami', serif;  /* Logo käyttää Alkamia */
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1;
+}
+/* Footerin alaotsikko on pienempi ja himmeämpi, jotta se ei kilpaile pääotsikon kanssa. */
+.logo-subtitle{
+  font-size: 20px;
+    opacity: 0.8;
+}

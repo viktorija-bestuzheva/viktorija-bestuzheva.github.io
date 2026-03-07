@@ -1,0 +1,242 @@
+
+
+:root {
+    --bg-color: linear-gradient(180deg, #2D1B69 0%, #6B2D9E 50%, #8B3DAF 100%); /* Основной фиолетовый */
+    --card-bg: #ffffff; /* Темно-фиолетовый для карточек */
+    --accent-color: rgba(234, 224, 224, 0.63); /* Цвет тегов и кнопок */
+    --text-color: #1f0046;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  gap:1px;
+  flex-direction: row-reverse;
+  padding: 5px 40px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.303)
+}
+.logo-icon {
+  font-size: 18px;
+  vertical-align: super;
+}
+.logo-text{
+    color: #ffffff;
+  display:flex;
+  flex-direction:column;
+}
+.logo-main {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+}
+.logo-subtitle{
+  font-size: 12px;
+    opacity: 0.8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color); 
+    color: var(--text-color);
+    margin: 0;
+    min-height: 100vh; 
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовок */
+.main-header {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.main-header h1 {
+    display: inline-block;
+    font-size: 40px;
+    color:#ffffff;
+}
+
+/* Общие стили карточек */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.212);
+    margin-left: 30 px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.leo_text {
+    width: 500px;
+}
+
+/* Верхняя секция */
+.main-look {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid #ffffff4e;
+}
+
+.main-look .content { flex: 1; }
+
+.tags { margin: 15px 0;
+        display: flex; 
+        gap: 8px; 
+        flex-wrap: wrap; 
+}
+
+.tag {
+    opacity: 0.55;
+    background: var(--accent-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.226)
+}
+
+.gallery { display: flex; gap: 15px; }
+
+.img-box {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.large { width: 250px; height: 220px; border: 2px solid #ffffffa9;}
+.medium { width: 200px; height: 220px; border: 2px solid #ffffffa9;}
+
+/* Нижняя сетка */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* Секция Outfits */
+
+.outfit-item {
+    opacity: 0.55;
+    background: var(--accent-color);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 5px 15px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border: 3px solid #ffffff4e;
+}
+
+.best {
+    color: #ffffff;
+}
+
+.outfit-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/* Секция Trending */
+.trending {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ffffff4e;
+}
+
+.trending-text {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.color-circles {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3)
+}
+
+.shapes-squares {
+    margin: 20px 0;
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+}
+
+.shapes {
+    background: var(--accent-color);
+    opacity: 0.55;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.226)    
+}
+
+.trending-gallery { display: flex; gap: 40px; }
+.trending-gallery .img-box { width: 230px; height: 230px;  border: 2px solid #ffffffa9 }
+
+/* Кнопки */
+button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-action {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.btn-main {
+    padding: 10px 70px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FF8A5B 0%, #FF6B9D 100%);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 138, 91, 0.3);
+}
+
+.btn-main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 138, 91, 0.5);
+}
+
+.outfit-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.578);
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 768px) {
+    .main-look, .bottom-grid, .trending {
+        flex-direction: column;
+    }
+    .bottom-grid { grid-template-columns: 1fr; }
+    .gallery { justify-content: center; }
+}
