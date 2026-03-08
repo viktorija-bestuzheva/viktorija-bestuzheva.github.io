@@ -1,0 +1,239 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family:Arial, sans-serif;
+  min-height:100vh;
+  background: linear-gradient(180deg, #2D1B69 0%, #6B2D9E 50%, #8B3DAF 100%);
+  color:white;
+}
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.logo {
+  display:flex;
+  align-items:center;
+  gap:1px;
+  flex-direction: row-reverse;
+}
+.logo-icon {
+  font-size: 24px;
+  vertical-align: super;
+}
+.logo-text{
+  display:flex;
+  flex-direction:column;
+}
+.logo-main {
+  font-size:54px;
+  font-weight:bold;
+  line-height:1;
+}
+.logo-subtitle{
+  font-size: 20px;
+    opacity: 0.8;
+}
+.auth-buttons {
+  display:flex;
+  gap: 15px;
+}
+
+.sign-in-button {
+  text-decoration: none;
+  color: white;
+}
+
+.auth-buttons button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 100px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-sign-in {
+  border: 1.5px solid rgb(255, 255, 255) !important;
+  background: linear-gradient(135deg, #FF8A5B 0%, #FF6B9D 100%);
+  box-shadow: 0 4px 15px rgba(255, 138, 91, 0.3);
+  color: white;
+}
+
+.btn-sign-in:hover {
+  background: linear-gradient(135deg, #FFB88C 0%, #FF8FAD 100%);
+}
+.btn-log-in {
+  background: transparent;
+  border: 1.5px solid rgb(255, 255, 255) !important;
+  color:white;
+}
+.btn-log-in:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: solid white;
+}
+.navigation {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 100px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(201, 198, 198, 0.367);
+}
+.nav-link {
+  color: white;
+  text-decoration:none;
+  font-size: 22px;
+  transition: opacity 0.3s;
+}
+.nav-link:hover {
+  opacity: 0.7;
+}
+.nav-separator {
+  color:rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+}
+.hero-section {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  min-height: 800px;
+  overflow: hidden;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero-title {
+  font-size: 84px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+.hero-description {
+  font-size: 32px;
+  line-height: 1.0;
+  margin-bottom: 100px;
+  opacity: 0.9;
+}
+.hero-image {
+  width: 800px;                  
+  height: 800px; 
+  border-radius: 50%;
+  background: url("Nails.png") center/cover no-repeat;
+  border: 3px solid rgba(255, 255, 255, 0.3);  
+  box-shadow: 0 0 60px rgba(139, 61, 175, 0.6);
+  margin-right: -200px;
+}
+.btn-choose {
+  padding: 15px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration:none;
+  background: linear-gradient(135deg, #FF8A5B 0%, #FF6B9D 100%);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 138, 91, 0.3);
+}
+.btn-choose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 138, 91, 0.5);
+}
+.zodiac-section {
+  padding: 40px;
+  margin-top: 100px;
+}
+.zodiac_selection {
+  font-size: 55px;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  padding-top: 0px;
+  margin-top: 100px;
+}
+.zodiac-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 170px);  
+  gap: 20px;
+  justify-content: center; 
+  margin: 0 auto;
+}
+.Aries-card, .Taurus-card, .Gemini-card, .Cancer-card,
+.Leo-card, .Virgo-card, .Libra-card, .Scorpio-card {
+  border: 0.1px solid rgba(255, 255, 255, 0.569);
+  border-radius: 40px;
+  padding: 40px 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.Aries-icon, .Taurus-icon, .Gemini-icon, .Cancer-icon,
+.Leo-icon, .Virgo-icon, .Libra-icon, .Scorpio-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    color: white;
+}
+.Aries-card:hover, .Taurus-card:hover, .Gemini-card:hover, .Cancer-card:hover,
+.Leo-card:hover, .Virgo-card:hover, .Libra-card:hover, .Scorpio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+.Aries, .Taurus, .Gemini, .Cancer, .Leo, .Virgo, .Libra, .Scorpio{
+  font-size: 23px;
+  color: rgba(255, 255, 255, 0.826)
+}
+.Aries-card {
+  background: linear-gradient(135deg, #FFB88C 0%, #d93333 100%);
+}
+.Taurus-card {
+  background: linear-gradient(135deg, #e75151 0%, #c47f2f 100%);
+}
+.Gemini-card {
+  background: linear-gradient(135deg, #eea570 0%, #36227c 100%);
+}
+.Cancer-card {
+  background: linear-gradient(135deg, #f5be50 0%, #142365 100%);
+}
+.Leo-card {
+  background:  linear-gradient(135deg, #FFB88C 0%, #b52958 100%);
+}
+.Virgo-card {
+  background: linear-gradient(135deg, #eaaf66 0%, #3752db 100%);
+}
+.Libra-card {
+  background: linear-gradient(135deg, #36227c 0%, #FF9A8B 100%);
+}
+.Scorpio-card {
+  background: linear-gradient(135deg, #142365 0%, #a27ede 100%);
+}
+
+.zodiac-link {
+  display: flex;          /* Включаем гибкий контейнер */
+  flex-direction: column; /* Располагаем элементы в колонку (друг под другом) */
+  align-items: center;    /* Центрируем по горизонтали */
+  justify-content: center;/* Центрируем по вертикали */
+    
+  width: 100%;            /* Ссылка растягивается на всю ширину карточки */
+  height: 100%;           /* Ссылка растягивается на всю высоту карточки */
+  text-decoration: none;  /* Убираем синее подчеркивание текста */
+  color: inherit;         /* Цвет текста как у родителя */
+}
