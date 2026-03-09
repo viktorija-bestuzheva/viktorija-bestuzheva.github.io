@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2D1B69 0%, #6B2D9E 50%, #8B3DAF 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 10%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+a.gohome {
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* logo */
+.logo-text { display: flex; flex-direction: column; text-align: right; }
+.logo-main { font-size: 32px; font-weight: bold; line-height: 1; }
+.logo-icon { font-size: 18px; vertical-align: super; }
+.logo-subtitle { font-size: 12px; opacity: 0.8; }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.page-title {
+    margin: 2.5rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Container for cards */
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Card itself */
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.imageWrapper {
+    flex-shrink: 0; 
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.cardContent h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.cardContent ul {
+    list-style: none;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.8;
+}
