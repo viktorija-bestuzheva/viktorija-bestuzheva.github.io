@@ -19,6 +19,13 @@ header {
     padding: 1rem;
 }
 
+.logo {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    cursor: pointer;
+}
+
 nav ul {    
     list-style: none;
     padding: 0;
@@ -123,3 +130,4 @@ button.submit:hover {
         padding: 20px;
     }
 }
+
